@@ -39,6 +39,6 @@ stages:
     steps:
     - task: AzureWebAppContainer@1
       inputs:
-      appName: $(WebAppName)
-      azureSubscription: 'Resource Manager - Tailspin - Space Game'
-      imageName: $(RegistryName)/$(webRepository):$(build.buildId) 
+        appName: $(WebAppName)
+        azureSubscription: 'Resource Manager - Tailspin - Space Game'
+        imageName: $(RegistryName)/$(webRepository):$(build.buildId) 
